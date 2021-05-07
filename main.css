@@ -1,0 +1,51 @@
+.head {
+  background-color: dodgerblue;
+  height: 40px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+#image {
+  height: 100px;
+  width: 100px;
+}
+@media screen and (max-width: 1024px) {
+  #para {
+    width: 100%;
+  }
+  #image {
+    height: 100px;
+    width: 100px;
+  }
+
+  #head {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #head {
+    width: 60%;
+  }
+
+  #para {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #head {
+    width: 90%;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #para {
+    width: 100%;
+  }
+  #image {
+    width: 100%;
+    display: block;
+  }
+}
